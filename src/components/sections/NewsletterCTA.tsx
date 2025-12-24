@@ -1,17 +1,71 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, FileText } from "lucide-react";
-import { newsletters } from "@/data/newsletters";
+import { fetchNewsletters, type Newsletter } from "@/data/newsletters";
 import { paradigms } from "@/data/paradigms";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import newsletterCover from "@/assets/newsletter/page1.jpg";
 
 const NewsletterCTA = () => {
-  const latestNewsletter = newsletters[0];
+  const [latestNewsletter, setLatestNewsletter] = useState<Newsletter | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadNewsletter = async () => {
+      try {
+        const data = await fetchNewsletters();
+        if (data.length > 0) {
+          setLatestNewsletter(data[0]);
+        }
+      } catch (error) {
+        console.error("Failed to load newsletter:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    loadNewsletter();
+  }, []);
+
+  // Show loading state
+  if (loading) {
+    return (
+      <section className="relative py-24 lg:py-32 overflow-hidden">
+        <div className="absolute inset-0 gradient-radial" />
+        <div className="relative container mx-auto px-4 lg:px-8">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+            <p className="text-muted-foreground">Loading newsletter...</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  // Show message if no newsletter
+  if (!latestNewsletter) {
+    return (
+      <section className="relative py-24 lg:py-32 overflow-hidden">
+        <div className="absolute inset-0 gradient-radial" />
+        <div className="relative container mx-auto px-4 lg:px-8">
+          <div className="text-center">
+            <h2 className="font-display text-4xl lg:text-5xl font-bold mb-6">
+              Paradigm <span className="text-gradient">Chronicles</span>
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              No newsletters available yet. Check back soon!
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   const featuredParadigms = latestNewsletter.featuredParadigms
-    .map(id => paradigms.find(p => p.id === id))
-    .filter(Boolean);
+    ?.map(id => paradigms.find(p => p.id === id))
+    .filter(Boolean) || [];
 
   return (
     <section className="relative py-24 lg:py-32 overflow-hidden">
