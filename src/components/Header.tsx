@@ -24,15 +24,22 @@ const Header = () => {
       
       <nav className="relative container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary/30 blur-lg group-hover:bg-primary/50 transition-colors" />
-              <span className="relative font-display font-bold text-2xl text-gradient">
-                K-HUB
-              </span>
-            </div>
-          </Link>
+        {/* Logo */}
+        <Link to="/" className="flex items-center group">
+          <div className="relative flex justify-center items-center">
+            
+            {/* Glow: Permanent, White, Wide. */}
+            <div className="absolute inset-2 z-0 blur-xl rounded-full bg-white/40" />
+            
+            <img 
+              src="khub-logo.svg" 
+              alt="K-HUB" 
+              /* CHANGE HERE: increased h-24 -> h-28 and lg:h-32 -> lg:h-40 */
+              className="relative z-10 h-28 lg:h-40 w-auto object-contain transition-transform group-hover:scale-105"
+            />
+          </div>
+        </Link>
+
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
