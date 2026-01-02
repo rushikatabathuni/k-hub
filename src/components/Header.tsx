@@ -29,7 +29,7 @@ const Header = () => {
           <div className="relative flex justify-center items-center">
             
             {/* Glow: Permanent, White, Wide. */}
-            <div className="absolute inset-2 z-0 blur-xl rounded-full bg-white/40" />
+            {/* <div className="absolute inset-2 z-0 blur-xl rounded-full bg-white/40" /> */}
             
             <img 
               src="khub-logo.svg" 
