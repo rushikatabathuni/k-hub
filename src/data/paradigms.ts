@@ -52,7 +52,6 @@ export const paradigms: Paradigm[] = [
       "Reinforcement Learning"
     ],
     highlights: [
-      "Partnership with Laurus Labs",
       "State-of-the-art performance on benchmarks",
       "Research under peer review in Q1 journals",
       "Focus on 'undruggable' targets"
@@ -137,12 +136,12 @@ export const paradigms: Paradigm[] = [
   },
   {
     id: "mental-health",
-    name: "Mental Health Tech",
+    name: "Neuroparadigm",
     shortName: "Mental Health",
     tagline: "AI-Driven Mental Wellness",
     description: "Mental Health Tech focuses on developing AI-driven solutions for mental health support, digital therapeutics, and accessible psychological care through technology-enabled interventions.",
     domain: "Artificial Intelligence, Healthcare",
-    focusArea: "Digital Therapeutics",
+    focusArea: "AI driven Mental Wellness",
     homebase: "K-Hub Campus",
     icon: paradigmLogos['mental-health'],
     color: "accent",
@@ -167,12 +166,12 @@ export const paradigms: Paradigm[] = [
   },
   {
     id: "nutraceuticals",
-    name: "Nutraceuticals",
+    name: "Neutraparadigm",
     shortName: "Nutra",
     tagline: "Functional Foods & Supplements",
     description: "The Nutraceuticals vertical explores the intersection of nutrition science and pharmaceutical development, focusing on functional foods, dietary supplements, and personalized nutrition solutions.",
     domain: "Food Science, Biotechnology",
-    focusArea: "Nutritional Research",
+    focusArea: "Neutraceuticals",
     homebase: "K-Hub Campus",
     icon: paradigmLogos.nutraceuticals,
     color: "primary",
@@ -196,12 +195,12 @@ export const paradigms: Paradigm[] = [
   },
   {
     id: "crystal",
-    name: "Crystal Paradigm",
+    name: "Crystalparadigm",
     shortName: "Crystal",
     tagline: "Materials Science & Crystallography",
     description: "Crystal Paradigm focuses on advanced materials science research, crystallography, and the development of novel materials with specific properties for various technological applications.",
     domain: "Materials Science, Chemistry",
-    focusArea: "Advanced Materials",
+    focusArea: "Material Science",
     homebase: "K-Hub Campus",
     icon: paradigmLogos.crystal,
     color: "primary",
