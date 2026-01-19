@@ -1,0 +1,20 @@
+{
+  "issueNumber": 3,
+  "title": "Paradigm Chronicles Newsletter Issue 03",
+  "publishDate": "2026-01-16T18:30:00.000Z",
+  "summary": "The Paradigm Chronicles Issue - 03 newsletter from K-Hub Media Labs details work across three deep-tech verticals: Drugparadigm, which developed the Macro-Equi-Diff (MED) AI model for geometry-aware macrocycle drug design; Cyberparadigm, which launched new Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) challenges on its \"Let Us Hack\" learning platform; and Roboparadigm, which completed the software integration to upgrade the OpenMANIPULATOR-X robot to 6 Degrees of Freedom (DOF)",
+  "featuredParadigms": [
+    "drug",
+    "cyber",
+    "robo"
+  ],
+  "coverImage": "/uploads/Screenshot 2026-01-19 223755.png",
+  "pdfUrl": "https://drive.google.com/file/d/17_5oZw_weyLOlK4OrfwJd9Adx-wEMIkz/view",
+  "highlights": [
+    {
+      "paradigmId": "drug",
+      "title": "Macrocycles",
+      "description": "Drugparadigm focuses on AI-driven design of complex drug modalities using Macro-Equi-Diff (MED)"
+    }
+  ]
+}
