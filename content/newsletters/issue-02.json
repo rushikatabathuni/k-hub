@@ -1,0 +1,20 @@
+{
+  "issueNumber": 2,
+  "title": "Paradigm Chronicles Issue 02",
+  "publishDate": "2026-01-01T18:30:00.000Z",
+  "summary": "This newsletter highlights Drugparadigm's new ABFormer deep learning model for Antibody-Drug Conjugates (ADCs), Cyberparadigm's \"Let Us Hack\" hands-on training platform, and Roboparadigm's technical process for upgrading the OpenMANIPULATOR-X to a 6 Degrees of Freedom robotic arm.",
+  "featuredParadigms": [
+    "drug",
+    "cyber",
+    "robo"
+  ],
+  "coverImage": "/uploads/Screenshot 2026-01-19 223134.png",
+  "pdfUrl": "https://drive.google.com/file/d/1zq0dxOunAQwcqXnMapy5ccH1Vbo7l3Ep/view",
+  "highlights": [
+    {
+      "paradigmId": "drug",
+      "title": "ADCs",
+      "description": "Drugparadigm introduced ABFormer, a new deep learning model for predicting Antibody-Drug Conjugates (ADCs) activity, which showed consistent outperformance against the previous ADCNet model in evaluation metrics"
+    }
+  ]
+}
