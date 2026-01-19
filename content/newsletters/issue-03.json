@@ -20,6 +20,11 @@
       "paradigmId": "cyber",
       "title": "XSS and CSRF",
       "description": "Cyberparadigm offers hands-on web security challenges like XSS and CSRF on its \"Let Us Hack\" platform"
+    },
+    {
+      "paradigmId": "robo",
+      "title": "Upgrade OpenMANIPULATOR-X",
+      "description": "Roboparadigm successfully integrated the software necessary to upgrade the OpenMANIPULATOR-X robot to 6 Degrees of Freedom (DOF) for robotic automation"
     }
   ]
 }
