@@ -15,6 +15,11 @@
       "paradigmId": "drug",
       "title": "ADCs",
       "description": "Drugparadigm introduced ABFormer, a new deep learning model for predicting Antibody-Drug Conjugates (ADCs) activity, which showed consistent outperformance against the previous ADCNet model in evaluation metrics"
+    },
+    {
+      "paradigmId": "cyber",
+      "title": "Hands-On Training Platform",
+      "description": "Cyberparadigm detailed \"Let Us Hack,\" its hands-on cybersecurity training platform designed with gamified progression and instance-based challenges"
     }
   ]
 }
