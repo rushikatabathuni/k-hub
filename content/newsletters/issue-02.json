@@ -20,6 +20,11 @@
       "paradigmId": "cyber",
       "title": "Hands-On Training Platform",
       "description": "Cyberparadigm detailed \"Let Us Hack,\" its hands-on cybersecurity training platform designed with gamified progression and instance-based challenges"
+    },
+    {
+      "paradigmId": "robo",
+      "title": "Upgrading OpenMANIPULATOR-X",
+      "description": "Roboparadigm explained the mechanical design and fabrication process of upgrading the OpenMANIPULATOR-X to a 6 Degrees of Freedom robotic arm."
     }
   ]
 }
