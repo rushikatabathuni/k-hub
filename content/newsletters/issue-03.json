@@ -15,6 +15,11 @@
       "paradigmId": "drug",
       "title": "Macrocycles",
       "description": "Drugparadigm focuses on AI-driven design of complex drug modalities using Macro-Equi-Diff (MED)"
+    },
+    {
+      "paradigmId": "cyber",
+      "title": "XSS and CSRF",
+      "description": "Cyberparadigm offers hands-on web security challenges like XSS and CSRF on its \"Let Us Hack\" platform"
     }
   ]
 }
